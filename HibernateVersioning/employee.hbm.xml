@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+	<class name = "newPack.EmpPOJO" table ="employee_info">
+	
+	<id name = "eid" column = "Id">
+	<generator class = "assigned"/>
+	</id>
+	
+	<version name="ver" column="version"></version>
+	<property name="ename" column="Ename"></property>
+	<property name="email" column="Email"></property>
+	<property name="phone" column="Phone"></property>
+	<property name="address" column="Address"></property>
+	
+	</class>
+</hibernate-mapping>
